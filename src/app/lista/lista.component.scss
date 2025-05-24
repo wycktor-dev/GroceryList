@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px #ccc;
+    padding: 20px 30px;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.titulo {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #0056b3;
+    text-shadow: 1px 1px 1px #919191;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.add-item-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background: #007bff;
+    color: #fff;
+}
+
+th {
+    background: #007bff;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+    background-color: #e6f0ff;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.item-riscado {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-button img {
+    width: 18px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+@media (min-width: 600px) {
+    .add-item-form {
+        flex-direction: row;
+    }
+
+    input {
+        flex: 1;
+    }
+
+    button {
+        width: auto;
+    }
+}
