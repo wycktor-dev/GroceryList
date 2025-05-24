@@ -28,11 +28,3 @@ npm install
 ng serve
 ```
 Access `http://localhost:4200/` in your browser.
-
-## Contribution
-
-Contributions are welcome! Open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT license.
